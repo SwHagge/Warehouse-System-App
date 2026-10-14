@@ -1056,7 +1056,7 @@ class _InventoryTable extends StatelessWidget {
             ),
         ],
       ),
-              initialValue: _category,
+    );
   }
 }
 
@@ -1089,7 +1089,6 @@ class _TableRow extends StatelessWidget {
       letterSpacing: header ? 0.5 : 0,
     );
     return Material(
-      color: header ? const Color(0xFFFAFBFA) : Colors.white,
       child: InkWell(
         onTap: onTap,
         child: Container(
@@ -1321,7 +1320,7 @@ class _AddItemDialogState extends State<_AddItemDialog> {
             ),
             const SizedBox(height: 12),
             DropdownButtonFormField<String>(
-              value: _category,
+              initialValue: _category,
               decoration: const InputDecoration(labelText: 'Kategorie'),
               items: [
                 for (final category in _warehouseCategories)

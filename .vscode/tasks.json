@@ -18,12 +18,5 @@
 			"isBackground": false,
 			"problemMatcher": []
 		},
-		{
-			"label": "Validate warehouse Flutter app",
-			"type": "shell",
-			"command": "& \"$env:USERPROFILE\\develop\\flutter\\bin\\flutter.bat\" analyze",
-			"isBackground": false,
-			"problemMatcher": []
-		}
 	]
 }
