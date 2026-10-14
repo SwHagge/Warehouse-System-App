@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Flutter: pub get",
+			"type": "process",
+			"command": "flutter",
+			"args": [
+				"pub",
+				"get"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Fix Flutter entry point",
+			"type": "shell",
+			"command": "Move-Item -LiteralPath .\\main.dart -Destination .\\lib\\main.dart; flutter analyze",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
